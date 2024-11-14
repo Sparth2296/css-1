@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'cardfont';
+    src: url('./font/Roboto-Regular.ttf');
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.card{
+    width: 350px;
+    height: 630px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+.head-1{
+    font-family: 'cardfont';
+    margin: 10PX 0;
+}
+.img-section{
+    width: 300px;
+    height: 290px;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+.img-section img:hover{
+    transition: all 0.5s ease;
+    transform: translateX(5px);
+}
+
+.img-section>img{
+    width: 100%;
+    height: 100%;
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+
+.cros1{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 35px;
+    position: absolute;
+    transform: translateX(150px) translateY(-198px);
+}
+.cross-box{
+    width: 95px;
+    height: 95px;
+    background-color: #ffffff;
+    transform: translateX(225px) translateY(-70px);
+    position: absolute;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #d3b19a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.round i{
+    font-size: 2rem;
+    transform: rotate(50deg);
+    transition: all 0.5s ease;
+
+}
+.img-section:hover .round{
+    background-color: #70b3b1;
+    transition: all 0.5s ease;
+}
+
+.img-section:hover .round>i{
+    color: rgb(255, 255, 255);
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+    
+}
+
+.bottum-pera h2{
+    font-family: 'cardfont';
+    margin: 10px 0;
+
+}
+.bottum-pera p {
+    font-family: sans-serif;
+    color: gray;
+    margin: 10px 0;
+}
+.button {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.button .btn1{
+    padding: 0px 10px;
+    background-color: rgba(165, 42, 42, 0.429);
+    color: rgb(116, 0, 0);
+    font-size: 0.9rem;
+    border-radius: 3px;
+    border: none;
+    font-weight: 550;
+    transition: all 0.5s ease;
+
+}
+
+.button .btn2{
+    padding: 5px 5px;
+    background-color: #70b3b1;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    border: none;
+    font-weight: 550;
+    transition: all 0.5s ease;
+
+}
+.btn1:hover{
+    background-color: transparent;
+    transition: all 0.5s ease;
+    border: 1px solid black;
+
+}
+.btn2:hover{
+    background-color: transparent;
+    transition: all 0.5s ease;
+    border: 1px solid black;
+
+}
+
+
+

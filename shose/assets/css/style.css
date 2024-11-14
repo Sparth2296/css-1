@@ -1,0 +1,244 @@
+/* Global Styles */
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(21, 35, 77);
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Ensure positioning is relative for the hamburger icon */
+}
+
+/* Menu Container */
+.menu {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(12, 20, 44);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.menu img {
+    margin-left: 0.5%;
+    width: 90px;
+    height: 100%;
+}
+
+/* Menu Items Container */
+.menu-items {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Menu List Items */
+.menu-item {
+    font-size: 1.17rem;
+    width: 100px;
+    height: 35px;
+    background-color: #d49c54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.menu-item:hover {
+    border: 1px solid #d49c54;
+    transition: all 0.4s ease;
+    background-color: transparent;
+}
+
+/* Search Bar */
+.searchbar {
+    width: 250px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #d49c54;
+    border-radius: 25px;
+    font-size: 1.12rem;
+    padding: 10px;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    width: 75%;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    background-color: transparent;
+}
+
+/* Media Queries */
+
+/* For large screens (1024px and above) */
+@media (min-width: 1024px) {
+    .menu {
+        height: 70px;
+        justify-content: space-between;
+    }
+
+    .menu-items {
+        display: flex;
+        height: 30px;
+
+    }
+
+    .searchbar {
+        width: 250px;
+        height: 45px;
+        padding: 10px;
+    }
+}
+
+/* For medium screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        height: 65px;
+    }
+
+    .menu {
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu img {
+        width: 75px;
+        height: 65px;
+    }
+
+    .menu-items {
+        display: none;
+        /* Hide menu items by default */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(12, 20, 44);
+        border-radius: 0 0 25px 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .menu-item {
+        width: auto;
+        height: 40px;
+        margin: 5px 0;
+    }
+
+    .searchbar {
+        width: 220px;
+        height: 35px;
+        padding: 5px;
+    }
+
+    .searchbar input {
+        width: 90%;
+        margin: 0 10px;
+    }
+
+    .searchbar i {
+        font-size: 1.12rem;
+    }
+}
+
+/* For small screens (below 768px) */
+@media (max-width: 767px) {
+    nav {
+        height: 55px;
+    }
+
+    .menu img {
+        margin: 0;
+        width: 65px;
+        height: 55px;
+    }
+
+    .menu-items {
+        display: none;
+        /* Hide menu items by default */
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(12, 20, 44);
+        border-radius: 0 0 25px 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .menu-item {
+        width: auto;
+        height: 30px;
+        margin: 5px 0;
+    }
+
+    .searchbar {
+        width: 157px;
+        height: 30px;
+    }
+
+    .searchbar input {
+        width: 70%;
+    }
+
+    .searchbar i {
+        font-size: 0.8rem;
+    }
+     #menu-toggle{
+        display: none;
+     }
+     #menu-toggle:checked~.menu-items{
+        right: 0;
+     }
+
+     .menu-items{
+        width: 125px;
+        position: absolute;
+        top: 0;
+        right: -125px;
+        background-color: aqua;
+        height: 100vh;
+        transition: all 0.5s ease;
+        
+     }
+     #hembarger-btn{
+        background-color: black;
+        font-size:1.2rem;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-right: 3%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+}

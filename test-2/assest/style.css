@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: gray;
+     */
+    background: url('./imsge/01.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    width: 100%;
+    height: 70px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: orangered;
+}
+
+.manu {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    transition: all 0.5s ease;
+
+}
+
+.searchbar {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar input {
+    height: 40px;
+    border: 3px solid rgb(255, 106, 0);
+    padding-left: 5px;
+    background-color: transparent;
+}
+
+::placeholder {
+    font-size: 1.1rem;
+}
+
+.searchbar button {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(255, 106, 0);
+    border: none;
+
+}
+
+.main-container {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 85%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-box {
+    width: 60%;
+    height: 100%;
+}
+
+.left-box h1 {
+    font-size: 3rem;
+    line-height: 50px;
+
+
+}
+
+.left-box span {
+    color: red;
+}
+
+.left-box p {
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin-top: 10px;
+
+}
+
+.left-box button {
+    width: 110px;
+    height: 30px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+.left-box button:hover{
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    
+}
+.right-box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    width: 300px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.176);
+    box-shadow: 0px 0px 8px 0px rgb(113, 113, 113);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 2.5% 5%;
+}
+
+.form-box button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    color: rgb(255, 106, 0);
+    box-shadow: 0px 0px 8px 0px gray;
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+.form-box button:hover{
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    
+}
+.form-box .login {
+    width: 100%;
+    height: 45px;
+    font-size: 1.3rem;
+    border: none;
+    background-color: rgb(255, 106, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.form-box .login:hover{
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    
+}
+
+.form-box input {
+    width: 70%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.2px solid rgb(255, 106, 0);
+}
+
+.form-box span {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.form-box .sign {
+    text-decoration: underline;
+    color: rgb(255, 106, 0);
+}
+
+.icon {
+    width: 85%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.icon>i {
+    font-size: 1.7rem;
+}
+
+.log {
+    font-size: 0.8rem;
+}
